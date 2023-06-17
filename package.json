@@ -1,0 +1,24 @@
+{
+  "name": "aws_billing_dev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "local": "set NODE_ENV=local& nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adithyaba93/fsstest.git"
+  },
+  "author": "Adithya B A",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adithyaba93/fsstest/issues"
+  },
+  "homepage": "https://github.com/adithyaba93/fsstest#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22"
+  }
+}
