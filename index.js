@@ -3,6 +3,8 @@ const app = express();
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const path = require("path");
+console.log(path.join(__dirname));
+const env = require("./config/environment");;
 
 
 // Middlewares
@@ -17,15 +19,12 @@ var corsOptions = {
 };
 app.use(cors(corsOptions));
 
-const PORT = process.env.PORT || 8080
+const PORT = env.port;
 
 const node_env = process.env.NODE_ENV;
-
 
 
 // Connect to server
 app.listen(PORT, () => {
     console.log(`Server is running on PORT ${PORT} in ${node_env} environment`);
 })
-
-console.log("yen samachara")
